@@ -1,9 +1,9 @@
 class PrismisDaemon < Formula
   desc "Prismis daemon: fetches content, scores it against your interests, serves the API"
   homepage "https://github.com/nickpending/prismis"
-  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "77ebfb86e5e1ddb22e8d7e842d1dabdbd4625a2005ef5d073556b0f373d37208"
-  version "0.3.1"
+  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "4f3a5072e7df2a3f633109ede95dd737373988a0a6eab43838e7124f34f3729b"
+  version "0.3.2"
   license "MIT"
   head "https://github.com/nickpending/prismis.git", branch: "main"
 
@@ -44,17 +44,21 @@ class PrismisDaemon < Formula
 
   def caveats
     <<~EOS
-      First run:
+      First run (steps 2 and 4 use the CLI:
+      brew install nickpending/prismis/prismis-cli):
 
         1. Put your LLM key in ~/.config/prismis/.env:
              OPENROUTER_API_KEY=sk-your-key-here
         2. Run `prismis-daemon` once to write ~/.config/prismis/config.toml, then
            tell Prismis what you care about:
              prismis-cli context bootstrap
-        3. Check that config, LLM services and sources are wired up:
-             prismis-daemon verify
-        4. Start the daemon at login and keep it running:
+        3. Start the daemon at login and keep it running (it creates the
+           database on its first start):
              brew services start prismis-daemon
+        4. Add the feeds you read (bootstrap's answer lists them):
+             prismis-cli source add <url>
+        5. Check that config, LLM services and sources are wired up:
+             prismis-daemon verify
     EOS
   end
 
