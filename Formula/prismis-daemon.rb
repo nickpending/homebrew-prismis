@@ -1,9 +1,9 @@
 class PrismisDaemon < Formula
   desc "Prismis daemon: fetches content, scores it against your interests, serves the API"
   homepage "https://github.com/nickpending/prismis"
-  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.2.tar.gz"
-  sha256 "4f3a5072e7df2a3f633109ede95dd737373988a0a6eab43838e7124f34f3729b"
-  version "0.3.2"
+  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.3.tar.gz"
+  sha256 "54de61297b8c1905ea4048d6c5e49ef6408af7b746b2a0f6acd42201276e4156"
+  version "0.3.3"
   license "MIT"
   head "https://github.com/nickpending/prismis.git", branch: "main"
 
