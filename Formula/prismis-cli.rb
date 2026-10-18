@@ -3,9 +3,9 @@ class PrismisCli < Formula
 
   desc "Command-line client for a Prismis daemon: manage sources and query content"
   homepage "https://github.com/nickpending/prismis"
-  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.6.tar.gz"
-  sha256 "09e265776c16e3753e342600367c3ded5e83c2d8a147878063e36cf068f63bf0"
-  version "0.3.6"
+  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.7.tar.gz"
+  sha256 "c339942543bcd26c0d372f6f0b65a141b9c1b23147eaa491eb1a2647b47a8e2d"
+  version "0.3.7"
   license "MIT"
   head "https://github.com/nickpending/prismis.git", branch: "main"
 
