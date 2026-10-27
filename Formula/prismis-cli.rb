@@ -3,9 +3,9 @@ class PrismisCli < Formula
 
   desc "Command-line client for a Prismis daemon: manage sources and query content"
   homepage "https://github.com/nickpending/prismis"
-  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.8.tar.gz"
-  sha256 "b87439f3cc3d24f0e9e68b01894bebd5df4c52b381586aaa3fce12d04cd27ca6"
-  version "0.3.8"
+  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.9.tar.gz"
+  sha256 "cef9c2ccf3b1fcd5f38887f29fc5c71093815fe4c1fb832079a87a5433b5eb02"
+  version "0.3.9"
   license "MIT"
   head "https://github.com/nickpending/prismis.git", branch: "main"
 
@@ -24,8 +24,8 @@ class PrismisCli < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/a3/c2/24167ea9858356b47a87a50d39908bfdb72ceeefe0041586e704e5376b3a/certifi-2026.7.22.tar.gz"
-    sha256 "741e2c3b351ddf169a738da9f2c048608ff7f2c5cc02f1ebc6b118bb090d5d55"
+    url "https://files.pythonhosted.org/packages/a6/bd/1436c50cc46699de0230fbaacc1d1de7bfec413176099949e9d5112e88f2/certifi-2026.10.19.tar.gz"
+    sha256 "035c1e85572b141bf1c3a3eff0e33a8eb74917522f2559075ff8d2fea780a1ae"
   end
 
   resource "h11" do
