@@ -1,9 +1,9 @@
 class PrismisTui < Formula
   desc "Terminal UI for Prismis, the local-first content prioritization pipeline"
   homepage "https://github.com/nickpending/prismis"
-  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.13.tar.gz"
-  sha256 "3e016ce8cc24125b1f3685955e926102885a449b71a5acb9d7541b7991ccc73f"
-  version "0.3.13"
+  url "https://github.com/nickpending/prismis/archive/refs/tags/v0.3.14.tar.gz"
+  sha256 "b7ae2eb46b47a47c53a8c52030e8d8536c3db2ee682cada2e4ddba7deda5de03"
+  version "0.3.14"
   license "MIT"
   head "https://github.com/nickpending/prismis.git", branch: "main"
 
